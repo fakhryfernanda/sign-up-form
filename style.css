@@ -3,6 +3,13 @@
     src: url(./font/norse-bold.otf);
 }
 
+/* GENERAL STYLE */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -13,19 +20,7 @@ body {
     font-family: sans-serif;
 }
 
-.image-sidebar {
-    background-color: blue;
-}
-
-main {
-    background-color: #A7CAAA;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-main > div {
-    padding: 0 50px;
-}
+/* IMAGE SIDEBAR */
 
 .image-sidebar {
     background-image: url(./image/side-image.jpg);
@@ -53,15 +48,6 @@ main > div {
     font-family: norse-bold;
 }
 
-.caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 20px;
-    background-color: hsl(125,25%,69%);
-    font-size: 1.2rem;
-}
-
 .attribution {
     color: white;
     text-align: center;
@@ -69,9 +55,6 @@ main > div {
     bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0);
-}
-
-.attribution {
     color: rgba(255, 255, 255, 0.50);
     font-size: 0.8rem;
     white-space: nowrap;
@@ -85,20 +68,41 @@ main > div {
     color: hsl(125,25%,72%);
 }
 
-.caption > p {
+/* MAIN CONTENT */
+
+main {
+    background-color: #F9FAFB;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+main > div {
+    padding: 0 50px;
+}
+
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.caption-container > p {
     margin: 0;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
-.caption > p:last-child {
+.caption-container > p:last-child {
     margin-top: 1rem;
 }
 
 .form-container {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25)
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
 }
 
-.form-container > p:first-child {
+.form-container > p {
     font-weight: bold;
 }
 
@@ -132,7 +136,7 @@ form input:focus {
     align-items: flex-start;
 }
 
-.lower {
+.lower-container {
     padding-top: 30px;
 }
 
@@ -145,16 +149,11 @@ button {
     font-weight: bold;
 }
 
-button:hover, button:focus {
+button:hover {
     cursor: pointer;
     background-color: hsl(92,20%,30%);
 }
 
-.lower a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.lower a:hover {
+.lower-container a:hover {
     color: blue;
 }
