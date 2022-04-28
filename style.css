@@ -109,7 +109,7 @@ main > div {
 form {
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
+    gap: 17px 20px;
 }
 
 form label {
