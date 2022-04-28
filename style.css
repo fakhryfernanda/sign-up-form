@@ -122,6 +122,7 @@ form label {
 form input {
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 4px;
+    padding: 5px 10px;
 }
 
 form input:focus {
@@ -156,4 +157,11 @@ button:hover {
 
 .lower-container a:hover {
     color: blue;
+}
+
+/* FORM VALIDATION */
+
+label::after {
+    content: '*';
+    color: red;
 }
